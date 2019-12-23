@@ -6,6 +6,7 @@
 }
 
 html, body {
+  background-image: url("/lunartrailblazer_website/images/star_bg.jpg");
   background-color: #000000;
   color: white;
   font-family: sans-serif;
