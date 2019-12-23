@@ -53,8 +53,8 @@ h4{
 /* Items */
 .timeline .timeline-body .timeline-item {
   position: relative;
-  width: 300px;
-  min-width: 180px;
+  width: 400px;
+  min-width: 280px;
 }
 
 .timeline .timeline-body .timeline-blank {
