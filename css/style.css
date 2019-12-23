@@ -6,8 +6,6 @@
 }
 
 html, body {
-  background-image: url("/images/star_bg.jpg");
-  background-repeat: repeat;
   background-color: #000000;
   color: white;
   font-family: sans-serif;
