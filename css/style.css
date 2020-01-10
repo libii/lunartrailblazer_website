@@ -92,6 +92,7 @@ span[data-descr]:hover {
   cursor: crosshair;
 }
 
+/*
 span[data-descr]:hover::after,
 span[data-descr]:focus::after {
   content: attr(data-descr);
@@ -107,7 +108,27 @@ span[data-descr]:focus::after {
   font-size: 14px;
   z-index: 1;
 }
+
+} */
+
+figcaption {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  min-width: 620px;
+  border: 1px #ffffff solid;
+  border-radius: 10px;
+  background-color: #9ebbc6;
+  padding: 12px;
+  color: #000000;
+  font-size: 14px;
+  z-index: 1; 
+}
+
 /* End: Added Hover Embedding */
+
+
 
 
 /* For Future: Cicle Hover Embedding */
