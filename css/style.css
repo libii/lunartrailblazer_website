@@ -126,6 +126,10 @@ figcaption {
   z-index: 1; 
 }
 
+figure:hover figcaption {
+   display: block;
+}
+
 /* End: Added Hover Embedding */
 
 
@@ -191,7 +195,6 @@ figcaption {
 @media (max-width: 1300px){
   span[data-descr]:hover::after,
   span[data-descr]:focus::after {
-  
     min-width: 550px;
   }
 }
@@ -199,7 +202,6 @@ figcaption {
 @media (max-width: 1100px){
   span[data-descr]:hover::after,
   span[data-descr]:focus::after {
-  
     min-width: 450px;
   }
 }
@@ -224,7 +226,6 @@ figcaption {
   span[data-descr]:focus::after {
     min-width: 250px;
   }
-
 }
 
 @media (max-width: 550px){
@@ -242,14 +243,17 @@ figcaption {
 .timeline .timeline-body .timeline-item {
   width: 200px;
 }
+}
 
-@media (max-width: 300px){
+
+
+@media (max-width: 300px)
+{
   span[data-descr]:hover::after,
   span[data-descr]:focus::after {
-    min-width: 120px;
+      min-width: 120px;
+    }
+    .timeline .timeline-body .timeline-item {
+    width: 150px;
   }
-  .timeline .timeline-body .timeline-item {
-  width: 150px;
-  }
-}
 }
