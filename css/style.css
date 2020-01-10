@@ -240,9 +240,10 @@ figure:hover figcaption {
   span[data-descr]:focus::after {
     min-width: 150px;
   }
+/*
 .timeline .timeline-body .timeline-item {
   width: 200px;
-}
+}*/
 }
 
 
@@ -253,7 +254,7 @@ figure:hover figcaption {
   span[data-descr]:focus::after {
       min-width: 120px;
     }
-    .timeline .timeline-body .timeline-item {
+    /*.timeline .timeline-body .timeline-item {
     width: 150px;
-  }
+  }*/
 }
