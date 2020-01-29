@@ -348,21 +348,21 @@ figure:hover figcaption {
 
     .timeline .timeline-body .timeline-item {
 		position: relative;
-		width: 250px;
+		width: 200px;
 		min-width: 200px;
 	}
 
 	.timeline .timeline-body .timeline-blank {
 		position: relative;
 		height: 100px;
-		width: 250px;
+		width: 200px;
 		min-width: 200px;
 	}
 
 	.timeline .timeline-body .timeline-blankSmall {
 		position: relative;
 		height: 10px;
-		width: 250px;
+		width: 200px;
 		min-width: 200px;
 	}
 
@@ -376,8 +376,25 @@ figure:hover figcaption {
   figcaption {
       min-width: 120px;
     }
-    .timeline .timeline-body .timeline-item {
-    width: 150px;
+         .timeline .timeline-body .timeline-item {
+		position: relative;
+		width: 150px;
+		min-width: 150px;
+	}
+
+	.timeline .timeline-body .timeline-blank {
+		position: relative;
+		height: 10px;
+		width: 150px;
+		min-width: 150px;
+	}
+
+	.timeline .timeline-body .timeline-blankSmall {
+		position: relative;
+		height: 10px;
+		width: 150px;
+		min-width: 150px;
+	}
   }
 }
 
@@ -388,21 +405,21 @@ figure:hover figcaption {
     }
       .timeline .timeline-body .timeline-item {
 		position: relative;
-		width: 200px;
+		width: 140px;
 		min-width: 180px;
 	}
 
 	.timeline .timeline-body .timeline-blank {
 		position: relative;
-		height: 200px;
-		width: 180px;
-		min-width: 200px;
+		height: 10px;
+		width: 140px;
+		min-width: 140px;
 	}
 
 	.timeline .timeline-body .timeline-blankSmall {
 		position: relative;
 		height: 10px;
-		width: 200px;
-		min-width: 180px;
+		width: 140px;
+		min-width: 140px;
 	}
 }
