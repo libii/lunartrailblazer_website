@@ -294,22 +294,22 @@ figure:hover figcaption {
 
       .timeline .timeline-body .timeline-item {
 		position: relative;
-		width: 280px;
-		min-width: 220px;
+		width: 380px;
+		min-width: 320px;
 	}
 
 	.timeline .timeline-body .timeline-blank {
 		position: relative;
 		height: 100px;
-		width: 280px;
-		min-width: 220px;
+		width: 380px;
+		min-width: 320px;
 	}
 
 	.timeline .timeline-body .timeline-blankSmall {
 		position: relative;
 		height: 10px;
-		width: 280px;
-		min-width: 220px;
+		width: 380px;
+		min-width: 320px;
 	}
 
 }
@@ -322,21 +322,21 @@ figure:hover figcaption {
 
       .timeline .timeline-body .timeline-item {
 		position: relative;
-		width: 260px;
+		width: 220px;
 		min-width: 210px;
 	}
 
 	.timeline .timeline-body .timeline-blank {
 		position: relative;
 		height: 100px;
-		width: 260px;
+		width: 220px;
 		min-width: 210px;
 	}
 
 	.timeline .timeline-body .timeline-blankSmall {
 		position: relative;
 		height: 10px;
-		width: 280px;
+		width: 220px;
 		min-width: 220px;
 	}
 }
@@ -348,22 +348,22 @@ figure:hover figcaption {
 
     .timeline .timeline-body .timeline-item {
 		position: relative;
-		width: 200px;
-		min-width: 200px;
+		width: 185px;
+		min-width: 185px;
 	}
 
 	.timeline .timeline-body .timeline-blank {
 		position: relative;
 		height: 100px;
-		width: 200px;
-		min-width: 200px;
+		width: 185px;
+		min-width: 185px;
 	}
 
 	.timeline .timeline-body .timeline-blankSmall {
 		position: relative;
 		height: 10px;
-		width: 200px;
-		min-width: 200px;
+		width: 185px;
+		min-width: 185px;
 	}
 
 
