@@ -266,21 +266,21 @@ figure:hover figcaption {
 
       .timeline .timeline-body .timeline-item {
 		position: relative;
-		width: 300px;
+		width: 350px;
 		min-width: 220px;
 	}
 
 	.timeline .timeline-body .timeline-blank {
 		position: relative;
 		height: 100px;
-		width: 300px;
+		width: 350px;
 		min-width: 220px;
 	}
 
 	.timeline .timeline-body .timeline-blankSmall {
 		position: relative;
 		height: 10px;
-		width: 300px;
+		width: 350px;
 		min-width: 220px;
 	}
 
