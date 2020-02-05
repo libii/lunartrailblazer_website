@@ -374,7 +374,7 @@ figure:hover figcaption {
 @media (max-width: 300px)
 {
   figcaption {
-      min-width: 120px;
+      min-width: 110px;
     }
          .timeline .timeline-body .timeline-item {
 		position: relative;
