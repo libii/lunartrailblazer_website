@@ -10,7 +10,8 @@ html, body {
   background-color: #000000;
   color: white;
   font-family: sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
+
 }
 
 /* Text under font */
@@ -78,7 +79,7 @@ span[data-descr] {
   position: relative;
   text-decoration: none;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   cursor: crosshair;
 }
 
@@ -88,7 +89,7 @@ span[data-descr]:hover {
   position: relative;
   text-decoration: none;
   color: #fdfd96;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   cursor: crosshair;
 }
 
@@ -117,13 +118,15 @@ figcaption {
   top: 39px;
   left: 15px;
   min-width: 680px;
-  border: 1px #ffffff solid;
+  border: 3px #0E2E42 solid;
   border-radius: 10px;
-  background-color: #9ebbc6;
+  background-color: #0E2E42;
   padding: 12px;
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
   z-index: 1; 
+  animation-duration: 0.8s;
+  animation-name: timeAnimation;
 }
 
 figure:hover figcaption {
@@ -161,9 +164,9 @@ figure:hover figcaption {
 
 .timeline .timeline-body .timeline-item .year {
   position: absolute;
-  left: -85px;
-  top: 2px;
-  font-size: 16px;
+  left: -95px;
+  top: -6px;
+  font-size: 28px;
   opacity: .5;
 }
 
@@ -172,9 +175,14 @@ figure:hover figcaption {
   padding-bottom: 20px;
 }
 
+.timeline .timeline-body .timeline-item .content .tImage img {
+  width: 300px;
+}
+
 .timeline .timeline-body .timeline-item .content .title {
   font-weight: 500;
   margin-bottom: 4px;
+
 }
 
 .bottomMoon img {
@@ -198,6 +206,31 @@ figure:hover figcaption {
    opacity: 0.4;
 }
 
+/**/
+@keyframes timeAnimation2 {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes timeAnimation {
+  from {
+    opacity: 0;
+    
+  }
+
+  to {
+    opacity: 100;
+    
+  }
+}
+/**/
 
 @media (max-width: 1300px){
   figcaption {
@@ -237,7 +270,7 @@ figure:hover figcaption {
   }
 
 
-    .timeline .timeline-body .timeline-item {
+  .timeline .timeline-body .timeline-item {
 		position: relative;
 		width: 420px;
 		min-width: 250px;
@@ -264,7 +297,7 @@ figure:hover figcaption {
     min-width: 280px;
   }
 
-      .timeline .timeline-body .timeline-item {
+  .timeline .timeline-body .timeline-item {
 		position: relative;
 		width: 350px;
 		min-width: 220px;
@@ -292,7 +325,7 @@ figure:hover figcaption {
   }
 
 
-      .timeline .timeline-body .timeline-item {
+  .timeline .timeline-body .timeline-item {
 		position: relative;
 		width: 380px;
 		min-width: 320px;
@@ -312,6 +345,10 @@ figure:hover figcaption {
 		min-width: 320px;
 	}
 
+  .timeline .timeline-body .timeline-item .content .tImage img {
+  width: 200px;
+}
+
 }
 
 @media (max-width: 550px){
@@ -319,8 +356,7 @@ figure:hover figcaption {
     min-width: 200px;
   }
 
-
-      .timeline .timeline-body .timeline-item {
+  .timeline .timeline-body .timeline-item {
 		position: relative;
 		width: 220px;
 		min-width: 210px;
@@ -339,6 +375,10 @@ figure:hover figcaption {
 		width: 220px;
 		min-width: 220px;
 	}
+
+  .timeline .timeline-body .timeline-item .content .tImage img {
+  width: 200px;
+  }
 }
 
 @media (max-width: 400px){
@@ -346,7 +386,7 @@ figure:hover figcaption {
 	    min-width: 150px;
 	  }
 
-    .timeline .timeline-body .timeline-item {
+  .timeline .timeline-body .timeline-item {
 		position: relative;
 		width: 185px;
 		min-width: 185px;
@@ -365,8 +405,6 @@ figure:hover figcaption {
 		width: 185px;
 		min-width: 185px;
 	}
-
-
 }
 
 
@@ -375,8 +413,9 @@ figure:hover figcaption {
 {
   figcaption {
       min-width: 110px;
-    }
-         .timeline .timeline-body .timeline-item {
+  }
+
+  .timeline .timeline-body .timeline-item {
 		position: relative;
 		width: 150px;
 		min-width: 150px;
@@ -395,7 +434,9 @@ figure:hover figcaption {
 		width: 150px;
 		min-width: 150px;
 	}
-  }
+  
+  
+
 }
 
 @media (max-width: 280px)
