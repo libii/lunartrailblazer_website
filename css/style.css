@@ -11,6 +11,7 @@ html, body {
   color: white;
   font-family: sans-serif;
   letter-spacing: 0.5px;
+
 }
 
 /* Text under font */
@@ -130,6 +131,8 @@ figcaption {
 
 figure:hover figcaption {
    display: block;
+   /*animation-duration: 0.8s;
+   animation-name: timeAnimations;*/
 }
 
 /* End: Added Hover Embedding */
@@ -142,16 +145,18 @@ figure:hover figcaption {
 /* Circle Accents */
 .timeline .timeline-body .timeline-item:after {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: 4px solid #ffffff;
   background-color: #ffffff;
   position: absolute;
   top: 0px;
-  left: -12px;
+  left: -10px;
   z-index: 9;
 }
+
+
 
 .timeline .timeline-body .timeline-item .imageInfo {
   position: absolute;
@@ -167,6 +172,21 @@ figure:hover figcaption {
   top: -6px;
   font-size: 28px;
   opacity: .5;
+}
+
+/* Large Circle Accents */
+.timeline .timeline-body .timeline-item .year:after {
+  content: '';
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  background-color: #ffffff;
+  position: absolute;
+  top: 1px;
+  right: -42px;
+  z-index: 9;
+  opacity: 100%;
 }
 
 .timeline .timeline-body .timeline-item .content {
@@ -226,6 +246,17 @@ figure:hover figcaption {
 
   to {
     opacity: 100;
+    
+  }
+}
+
+@keyframes timeAnimations {
+  from {
+    opacity: 100;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 /**/
@@ -432,6 +463,9 @@ figure:hover figcaption {
 		width: 150px;
 		min-width: 150px;
 	}
+  
+  
+
 }
 
 @media (max-width: 280px)
