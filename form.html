@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Milestones in Lunar Exploration for Water</title>
+  <link rel="icon" href="images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/template2.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+
+<form action="result.html" method="GET" enctype="multipart/form-data">
+	<div>
+	<label for="eventTitle">Event Title</label>
+	<input name=”eventTitle” id=”eventTitle” type=”text” required/> No more than 10 words.
+	<br />
+	</div>
+
+	<div>
+	<label for="date">Date</label>
+	<input type=”date” name=”date” id=”date” min="1960-01-01" required/> 
+	<br />
+	</div>
+
+	<div>
+	<label for="timeline_image">Choose file to upload</label>
+	<input type="file" id="timeline_image" name="timeline_image"
+	      accept=".jpg, .jpeg, .png" required>
+	</div>
+
+	<div>
+	<label for="description">Description<br /></label>
+	<textarea rows = "15" cols = "60" name = "description" required>
+	Enter text description. (No more than 100 words please.)
+	</textarea>
+	</div>
+	<div>
+		<button type="reset">reset</button>
+<button type="submit">Submit</button>
+</div>
+</form>
+</body>
+</html>
