@@ -112,12 +112,18 @@ span[data-descr]:focus::after {
 
 } */
 
+a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+
 figcaption {
   display: none;
   position: absolute;
   top: 39px;
   left: 15px;
-  min-width: 680px;
+  min-width: 880px;
   border: 3px #0E2E42 solid;
   border-radius: 10px;
   background-color: #0E2E42;
