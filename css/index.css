@@ -1,0 +1,474 @@
+@charset "utf-8";
+
+/* ELEMENTS */
+h1 {font-size: 46px;}
+h2 {font-size: 40px;}
+h3 {font-size: 34px;}
+h4 {font-size: 26px;}
+h5 {font-size: 22px;}
+h6 {font-size: 18px;}
+h1,h2,h3,h4,h5,h6 {margin: 20px 0 0 0;}
+
+.buttonDescription {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background-color: black;
+	opacity: 0;
+	padding: 90px 20px;
+	font-size: 140%;
+	color: white;
+	transition: 0.2s;
+	text-align: center;
+}
+.buttonDescription:hover {
+	opacity: 0.8;
+}
+.buttonIcon {
+	min-width: 300px;
+	width: 30%;
+	height: 300px;
+	margin: 30px 20px;
+	position: relative;
+}
+.buttonImg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.buttonTitle {
+	margin: 0px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	justify-content: center;
+	display: flex;
+}
+.buttonTitle:hover {
+	color: #AAAAAA;
+	transition: 0.3;
+}
+.centeredImg {
+	height: 300px;
+	width: auto;
+	max-width: 100%;
+	object-fit: cover;
+	position: relative;
+}
+.downloadButton {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	opacity: 0;
+	font-size: 140%;
+	color: white;
+	transition: 0.2s;
+}
+.filter {
+	justify-content: center;
+	flex-flow: wrap row;
+	align-items: center;
+	display: none;
+}
+.filterButton {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	font-size: 14px;
+}
+.filterButton:hover {
+	background-color: #ddd;
+}
+.filterButton.active {
+	background-color: #666;
+	color: white;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap row;
+	align-items: center;
+}
+.galleryDescription {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background-color: black;
+	opacity: 0;
+	padding: 20px 20px;
+	font-size: 100%;
+	color: white;
+	transition: 0.2s;
+	text-align: left;
+}
+.galleryDescription:hover {
+	opacity: 0.8;
+}
+.galleryHover:hover .downloadButton {
+	opacity: 0.8;
+}
+.galleryIframe {
+	width: 100%;
+	height: 100%;
+}
+.hero {
+	position: relative;
+	width: 100%;
+	height: auto;
+	z-index: -2;
+}
+.horizontalLine {
+	width: 60%;
+	height: 2px;
+	background-color: #CCCCCC;
+	margin: 10px auto 30px auto;
+}
+.news {
+	border-spacing: 20px;
+}
+.newsFlexImg{
+	width: 300px;
+	height: 250px;
+	object-fit: cover;
+	margin: 20px;
+}
+.newsFlexTOTW{
+	width: 300px;
+	height: 250px;
+	object-fit: contain;
+	margin: 20px;
+}
+.newsFlexTxt {
+	text-decoration: none;
+	text-align: left;
+	color: #000000;
+	width: 50vw;
+	flex-direction: column;
+}
+.newsFlexTxtHoverless {
+	text-decoration: none;
+	text-align: left;
+	color: #000000;
+	width: 50vw;
+	flex-direction: column;
+}
+.newsFlexTxt:hover {
+	color: #AAAAAA;
+	transition: 0.3;
+}
+.respContainer {
+	position: relative;
+	overflow: hidden;
+	padding-top: 75%;
+}
+.respIframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+.scrollIcon::before {
+	content: '╲╱';
+	color: #fff;
+	position: fixed;
+	opacity: 0.8;
+	width: 6rem;
+	font-size: 2rem;
+	height: 4rem;
+	line-height: 4rem;
+	text-align: center;
+	bottom: 2rem;
+	margin-left: -3rem;
+	left: 50%;
+	animation: bounce 1.5s ease infinite;
+}
+@keyframes bounce {
+  50% {
+	transform: translateY(-50%);
+  }
+  100% {
+	transform: translateY(0);
+  }
+}
+.scrollIcon {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: -1;
+}
+.show {
+	display: flex;
+}
+.spacerLarge {
+	width: 100%;
+	height: 50px;
+}
+.spacerSmall {
+	width: 100%;
+	height: 30px;
+}
+.teamIcon {
+	width: 120px;
+	height: 120px;
+	margin: 0px 30px 150px;
+	position: relative;
+}
+.teamName {
+	margin: 0;
+	padding: 5px 0 0 0;
+	
+}
+.teamTitle {
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-weight: 100;
+	font-size: 80%;
+}
+
+/* SHARE BUTTONS */
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block
+}
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5em
+}
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+}
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: top
+}
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle
+}
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: #fff;
+  fill: none
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #fff;
+  stroke: none
+}
+.resp-sharing-button--twitter {
+  background-color: #55acee
+}
+.resp-sharing-button--twitter:hover {
+  background-color: #2795e9
+}
+.resp-sharing-button--pinterest {
+  background-color: #bd081c
+}
+.resp-sharing-button--pinterest:hover {
+  background-color: #8c0615
+}
+.resp-sharing-button--facebook {
+  background-color: #3b5998
+}
+.resp-sharing-button--facebook:hover {
+  background-color: #2d4373
+}
+.resp-sharing-button--tumblr {
+  background-color: #35465C
+}
+.resp-sharing-button--tumblr:hover {
+  background-color: #222d3c
+}
+.resp-sharing-button--reddit {
+  background-color: #5f99cf
+}
+.resp-sharing-button--reddit:hover {
+  background-color: #3a80c1
+}
+.resp-sharing-button--google {
+  background-color: #dd4b39
+}
+.resp-sharing-button--google:hover {
+  background-color: #c23321
+}
+.resp-sharing-button--linkedin {
+  background-color: #0077b5
+}
+.resp-sharing-button--linkedin:hover {
+  background-color: #046293
+}
+.resp-sharing-button--email {
+  background-color: #777
+}
+.resp-sharing-button--email:hover {
+  background-color: #5e5e5e
+}
+.resp-sharing-button--xing {
+  background-color: #1a7576
+}
+.resp-sharing-button--xing:hover {
+  background-color: #114c4c
+}
+.resp-sharing-button--whatsapp {
+  background-color: #25D366
+}
+.resp-sharing-button--whatsapp:hover {
+  background-color: #1da851
+}
+.resp-sharing-button--hackernews {
+background-color: #FF6600
+}
+.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {   background-color: #FB6200 }
+.resp-sharing-button--vk {
+  background-color: #507299
+}
+.resp-sharing-button--vk:hover {
+  background-color: #43648c
+}
+.resp-sharing-button--facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+.resp-sharing-button--facebook:hover,
+.resp-sharing-button--facebook:active {
+  background-color: #2d4373;
+  border-color: #2d4373;
+}
+.resp-sharing-button--twitter {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+  background-color: #2795e9;
+  border-color: #2795e9;
+}
+.resp-sharing-button--email {
+  background-color: #777777;
+  border-color: #777777;
+}
+.resp-sharing-button--email:hover,
+.resp-sharing-button--email:active {
+  background-color: #5e5e5e;
+  border-color: #5e5e5e;
+}
+.resp-sharing-button--linkedin {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+.resp-sharing-button--linkedin:hover,
+.resp-sharing-button--linkedin:active {
+  background-color: #046293;
+  border-color: #046293;
+}
+
+/* GENERAL STYLING */
+.column {
+	flex-direction: column;
+	height: 250px;
+	align-items: baseline;
+}
+.centered {
+	text-align: center;
+}
+.contain {
+	object-fit: contain;
+}
+.justifyAround {
+	justify-content: space-around;
+}
+.margin {
+	margin: 0 50px;
+}
+.marginLarge {
+	margin: 0 25%;
+}
+.marginList {
+	margin: 20px 50px;
+}
+.marginNone {
+	margin: 0;
+}
+.padding {
+	padding: 0 20%;
+}
+.padding2 {
+	padding: 0 15%;
+}
+.textLeft {
+	text-align: justify;
+}
+.paddingBorder {
+	background-color: black;
+	padding: 10px;
+}
+p {
+	font-size: 18px;
+	line-height: 1.4;
+}
+.textDecorationNone {
+	text-decoration: none;
+	color: black;
+}
+.textDecorationNone:hover {
+	color: #AAAAAA;
+}
+.widthFixed {
+	width: 250px;
+}
+
+/* MOBILE */
+@media (max-width: 770px){
+	.horizontalLine {width: 100%;}
+	.marginLarge {margin: 0 10%;}
+	.marginList {margin: 20px;}
+	.newsFlexTxt {text-align: center;}
+	.newsFlexTxt h4 {font-size: 95%;}
+	.newsFlexTxt h6 {font-size: 95%;}
+	.newsFlexTxt p {font-size: 95%;}
+	.newsFlexTxtHoverless {text-align: center;}
+	.newsFlexTxtHoverless h4 {font-size: 95%;}
+	.newsFlexTxtHoverless h6 {font-size: 95%;}
+	.newsFlexTxtHoverless p {font-size: 95%;}
+	.padding {padding: 0;}
+	.padding2 {padding: 0;}
+	.scrollIcon {opacity: 0;}
+	h1 {font-size: 7vw;}
+	h2 {font-size: 6vw;}
+	h3 {font-size: 5vw;}
+	h4 {font-size: 4vw;}
+	h5 {font-size: 3.8vw;}
+	h6 {font-size: 3.5vw;}
+	p {font-size: 3.5vw;}
+}
+
+
+
+
+/*
+
+
+
+*/
