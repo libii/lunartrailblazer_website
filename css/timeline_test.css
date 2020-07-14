@@ -77,14 +77,14 @@ h4 {
 .timeline-blank {
   position: relative;
   width: 550px;
-  height: 100px;
+  height: 110px;
   min-width: 300px;
 }
 
 .timeline-blankSmall {
   position: relative;
   width: 550px;
-  height: 10px;
+  height: 40px;
   min-width: 300px;
 }
 
@@ -293,7 +293,7 @@ figure:hover figcaption {
   }
   .timeline-blank {
 		position: relative;
-		height: 100px;
+		height: 200x;
 		width: 400px;
 		min-width: 250px;
   }
