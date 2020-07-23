@@ -5,8 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 .timeline-general {
-  background-image: url("../images/timeline/stars_2048.png");
+  background-image: url("../images/timeline/stars_1024_7.png");
   background-color: #000000;
   color: white;
 }
@@ -25,21 +27,20 @@ p {
   font-weight: 300;
   font-size: 28px;
   line-height: 1.1;
-  opacity: 0.5;
+  color: #dddddd;
   letter-spacing: 0.5px;
 }
 
-/* Large Circle Accents */
-.year:after {
+.bigCircle {
   content: '';
   width: 26px;
   height: 26px;
   border-radius: 50%;
   border: 4px solid #ffffff;
-  background-color: #ffffff;
+  background-color: #888888;
   position: absolute;
-  top: 1px;
-  right: -42px;
+  top: -5px;
+  left: -15px;
   z-index: 9;
   opacity: 100%;
 }
@@ -71,9 +72,25 @@ p {
   width: 600px;
   min-width: 420px;
 }
+
+/* Circle Accents */
+.circle {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  z-index: 9;
+}
+
 h4 {
   font-size: 17px;
 }
+
 .timeline-blank {
   position: relative;
   width: 550px;
@@ -88,25 +105,6 @@ h4 {
   min-width: 300px;
 }
 
-/* Start: Added Hover Embedding */
-span[data-descr] {
-  font-family: sans-serif;
-  position: relative;
-  text-decoration: none;
-  color: white;
-  letter-spacing: 1px;
-  cursor: crosshair;
-}
-
-span[data-descr]:hover {
-  transition: 0.5s;
-  font-family: sans-serif;
-  position: relative;
-  text-decoration: none;
-  color: #fdfd96;
-  letter-spacing: 1px;
-  cursor: crosshair;
-}
 
 a.timeline-link:link {
   color: white;
@@ -144,7 +142,7 @@ figcaption {
   padding: 12px;
   color: #ffffff;
   font-size: 14px;
-  z-index: 1; 
+  z-index: 1;
   animation-duration: 0.8s;
   animation-name: timeAnimation;
 }
@@ -154,23 +152,6 @@ figure:hover figcaption {
    /*animation-duration: 0.8s;
    animation-name: timeAnimations;*/
 }
-
-
-/* Circle Accents */
-.timeline-item:after {
-  content: '';
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 4px solid #ffffff;
-  background-color: #ffffff;
-  position: absolute;
-  top: 0px;
-  left: -10px;
-  z-index: 9;
-}
-
-
 
 .imageInfo {
   position: absolute;
@@ -186,8 +167,16 @@ figure:hover figcaption {
 
 .tImage img {
   width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 100%;
 }
-
+.tImage p{
+   text-align: left;
+   width: 300px;
+   /*margin: 30px;*/
+   opacity: 0.4;
+}
 .title {
   font-weight: 500;
   margin-bottom: 4px;
@@ -207,12 +196,13 @@ figure:hover figcaption {
    opacity: 0.2;
 }
 
-/* check */
+/*
 .minicredit {
    text-align: left;
-   /*margin: 30px;*/
+   width: 300px;
+   /*margin: 30px;
    opacity: 0.4;
-}
+}*/
 
 /**/
 @keyframes timeAnimation2 {
