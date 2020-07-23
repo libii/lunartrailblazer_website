@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 
-
 .timeline-general {
   background-image: url("../images/timeline/stars_1024_7.png");
   background-color: #000000;
   color: white;
 }
+
 p {
   font-weight: 300;
   font-size: 14px;
@@ -87,6 +87,20 @@ p {
   z-index: 9;
 }
 
+.bcirle{
+  content: '';
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  background-color: #ffffff;
+  position: absolute;
+  top: -50px;
+  right: -42px;
+  z-index: 9;
+  opacity: 100%;
+}
+
 h4 {
   font-size: 17px;
 }
@@ -136,7 +150,7 @@ figcaption {
   top: 39px;
   left: 15px;
   max-width: 880px;
-  border: 3px #0E2E42 solid;
+  border: 2px #ffffff solid;
   border-radius: 10px;
   background-color: #0E2E42;
   padding: 12px;
@@ -167,6 +181,7 @@ figure:hover figcaption {
 
 .tImage img {
   width: 300px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   opacity: 100%;
@@ -205,18 +220,6 @@ figure:hover figcaption {
 }*/
 
 /**/
-@keyframes timeAnimation2 {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
 @keyframes timeAnimation {
   from {
     opacity: 0;
@@ -319,6 +322,9 @@ figure:hover figcaption {
    .tImage img {
  		width: 200px;
   }
+  .tImage p{
+   width: 200px;
+  }
 }
 
 @media (max-width: 700px){
@@ -367,6 +373,9 @@ figure:hover figcaption {
   }
   .tImage img {
  		width: 100px;
+  }
+   .tImage p{
+   width: 100px;
   }
 }
 
