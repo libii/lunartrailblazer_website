@@ -5,8 +5,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
+
+.snowfall canvas{
+  top:0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: -1;
+}
 
 .timeline-general {
+  position: absolute;
+  z-index: 10;
   background-image: url("../images/timeline/stars_1024_7.png");
   background-color: #000000;
   color: white;
