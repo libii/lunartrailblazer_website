@@ -43,6 +43,7 @@
 	<link href="css/template.css" rel="stylesheet" type="text/css">
 	<link href="css/index.css" rel="stylesheet" type="text/css">
 	<link href="css/timeline_test.css" rel="stylesheet" type="text/css">
+	<link href="css/moon.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -397,9 +398,8 @@
 							<h4 tabindex="0" class="title">Lunar Trailblazer Ridesshares with IMAP Launch</h4>
 							<p>2024</p>
 							<figcaption>
-								<div class="tImage">
+								<div class="tImage tLast">
 									<center><img src="images/logoBlue.png" style="height: auto;">
-								
 								<p>Credit: NASA</p></center></div>
 								<p>Lunar Trailblazer was selected to be one of the 4 of 5 secondary payloads on Heliophysic's <a href="https://www.nasa.gov/press-release/nasa-selects-mission-to-study-solar-wind-boundary-of-outer-solar-system" target="_blank" class="timeline-link">Intersteller Mapping and Acceleration Probe</a> (IMAP) launch, taking the next steps in understanding the origin, distribution, and nature of lunar water.</p>
 							</figcaption>
@@ -424,14 +424,20 @@
 			</div>
 			
 		</section>
-
+		<br><br><br><br>
 		<section title="Moon">
-			<div class="bottomMoon">
-				<a href="http://murray-lab.caltech.edu/LunarTrailblazer/webmap/" class="timeline-link"><img src="images/timeline/moon_bg_small.png" alt="Image from Galileo Orbiter using Solid-State Imaging Instrument"></a>
+			<div class="bottomMoon" style><br>
+				<div class="credit"><p>Image Credit: NASA/LRL/LOLA</p></div>
+				<div class="test test--5">
+					<div class="test__output">
+						<x-model class="model model--medium model--abs" src="moon.glb" style="transform: scale3d(2,2,2);"></x-model>
+					</div>
+				</div>
+				<!-- <img src="images/timeline/moon_bg_small.png" alt="Image from Galileo Orbiter using Solid-State Imaging Instrument"></a> -->
 			</div>
 
-			<div class="credit"><p>Image Credit: NASA/JPL</p></div>
 		</section>
+		
 
 	</div><!-- End: Pagebody Class -->
 
@@ -455,8 +461,13 @@
 				</div>
 			</div>
 		</footer>
-		
-		
 	</div>
+
+	<!-- 3D Moon Scripts -->
+  <script src="js/custom-element-polyfill.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/three-gltf-loader.min.js"></script>
+  <script src="js/model-element.min.js"></script>
+
 </body>
 </html>

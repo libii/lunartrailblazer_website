@@ -69,7 +69,7 @@ p {
 /* Items */
 .timeline-item {
   position: relative;
-  width: 600px;
+  width: 650px;
   min-width: 420px;
 }
 
@@ -156,9 +156,10 @@ figcaption {
   padding: 12px;
   color: #ffffff;
   font-size: 14px;
-  z-index: 1;
   animation-duration: 0.8s;
   animation-name: timeAnimation;
+  z-index: 1000;
+  transform: translateZ(29000px);
 }
 
 figure:hover figcaption {
@@ -186,6 +187,11 @@ figure:hover figcaption {
   margin-right: auto;
   opacity: 100%;
 }
+
+.tLast img {
+  width: 200px;
+}
+
 .tImage p{
    text-align: left;
    width: 300px;
@@ -206,7 +212,7 @@ figure:hover figcaption {
     margin-right: auto;
 }
 .credit p {
-   text-align: right;
+   text-align: center;
    margin: 30px;
    opacity: 0.2;
 }
@@ -322,6 +328,11 @@ figure:hover figcaption {
    .tImage img {
  		width: 200px;
   }
+
+  .tLast img {
+    width: 115px;
+ }
+  
   .tImage p{
    width: 200px;
   }
