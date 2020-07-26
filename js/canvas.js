@@ -7,8 +7,8 @@ function makeStarsCanvas(starSize = 0) {
   canvas.height = containerDiv.clientHeight;
   canvas.width = containerDiv.clientWidth;
 
-  const w = canvas.width + 3500; //3500 is the right buffer needed for resizing
-  const h = canvas.height;
+  const w = canvas.width + 3500; //3500px is the right buffer needed for window resizing
+  const h = canvas.height + 1000;//1000px buffer for window resizing
 
   const stars = [];
 
