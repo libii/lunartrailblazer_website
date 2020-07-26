@@ -6,9 +6,43 @@
   box-sizing: border-box;
 }
 
+
+/** Parallax **/
+.perspective {
+  perspective: 1px;
+  perspective-origin: top;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.preserve {
+  transform-style: preserve-3d;
+}
+
+.parallax-object {
+  position: absolute;
+  top: 0px;
+}
+
+.parallax-level-1 {
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax-level-2 {
+  transform: translateZ(-1.7px) scale(2.7);
+}
+
+.parallax-level-3 {
+  transform: translateZ(-2px) scale(3);
+  background: radial-gradient(ellipse at bottom, #1f245c 0%, #080b2e);
+}
+
+/** Timeline **/
 .timeline-general {
   background-image: url("../images/timeline/stars_1024_7.png");
   background-color: #000000;
+  background: radial-gradient(ellipse at bottom, #091A2D 35%, #06041C);
   color: white;
 }
 
@@ -143,7 +177,6 @@ a.timeline-link:active {
   text-decoration: underline;
 }
 
-
 figcaption {
   display: none;
   position: absolute;
@@ -152,7 +185,7 @@ figcaption {
   max-width: 880px;
   border: 2px #ffffff solid;
   border-radius: 10px;
-  background-color: #0E2E42;
+  background-color: #214B60;
   padding: 12px;
   color: #ffffff;
   font-size: 14px;
@@ -189,7 +222,7 @@ figure:hover figcaption {
 }
 
 .tLast img {
-  width: 200px;
+  width: 175px;
 }
 
 .tImage p{
@@ -216,14 +249,6 @@ figure:hover figcaption {
    margin: 30px;
    opacity: 0.2;
 }
-
-/*
-.minicredit {
-   text-align: left;
-   width: 300px;
-   /*margin: 30px;
-   opacity: 0.4;
-}*/
 
 /**/
 @keyframes timeAnimation {
@@ -276,7 +301,7 @@ figure:hover figcaption {
 	.timeline-blankSmall {
 	  position: relative;
 	  width: 500px;
-	  height: 10px;
+	  height: 100px;
 	  min-width: 300px;
 	}
 }
@@ -298,7 +323,7 @@ figure:hover figcaption {
   }
   .timeline-blankSmall {
 		position: relative;
-		height: 10px;
+		height: 100px;
 		width: 400px;
 		min-width: 250px;
   }
@@ -378,7 +403,7 @@ figure:hover figcaption {
   }
   .timeline-blankSmall {
 		position: relative;
-		height: 10px;
+		height: 100px;
 		width: 220px;
 		min-width: 220px;
   }
@@ -424,13 +449,13 @@ figure:hover figcaption {
   }
   .timeline-blank {
 		position: relative;
-		height: 10px;
+		height: 100px;
 		width: 150px;
 		min-width: 150px;
   }
   .timeline-blankSmall {
 		position: relative;
-		height: 10px;
+		height: 100px;
 		width: 150px;
 		min-width: 150px;
   }
@@ -447,13 +472,13 @@ figure:hover figcaption {
   }
   .timeline-blank {
 		position: relative;
-		height: 10px;
+		height: 100px;
 		width: 140px;
 		min-width: 140px;
   }
   .timeline-blankSmall {
 		position: relative;
-		height: 10px;
+		height: 100px;
 		width: 140px;
 		min-width: 140px;
 	}

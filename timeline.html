@@ -48,7 +48,10 @@
 
 <body>
 	<div class="mainContainer timeline-general">
-			
+		<!-- Stars Code -->
+		<div id="stars-near" class="parallax-object"></div>
+		<div id="stars-middle" class="parallax-object"></div>
+		<div id="stars-far" class="parallax-object "></div>
 		<header>
 			<div class="headerBrand">
 				<a href="https://www.caltech.edu">
@@ -98,7 +101,9 @@
 			</div>
 
 			<div title="1960" class="timeline-body">
-				
+				<!--Lunar Module 3d model -->
+				<x-model class="model model--medium model--abs" src="models/lander.glb" style="transform: rotateX(-5deg) rotateY(-5deg) translate3d(-125%, 0, -400px) scale3d(1.8, 1.8, 1.8)"></x-model>
+
 				<div class="timeline-item">
 					<p class="year">1960</p><div class="bigCircle" style="background-color: #444444;"></div>
 				</div>
@@ -180,7 +185,8 @@
 				<div class="timeline-item">
 				<p class="year">1990</p><div class="bigCircle" style="background-color: #333377;"></div>
 				</div>
-
+				<!-- Cassini 3d model -->
+				<x-model class="model model--medium model--abs" src="models/Cassini.glb" style="transform: scale3d(1.2,1.2,1.2) rotateX(15deg) rotateY(12deg) translate3d(-85%, -90%, -400px)"></x-model>
 				<div class="timeline-blankSmall"> <!-- blank space inbetween the year --></div>
 
 				<div class="timeline-item">
@@ -226,8 +232,9 @@
 				<p class="year">2000</p><div class="bigCircle" style="background-color: #338888;"></div>
 				</div>
 
+				<!-- MESSENGER 3d model -->
+				<x-model class="model model--medium model--abs" src="models/MESSENGER.glb" style="transform: rotateX(-15deg) rotateY(-15deg) translate3d(-205%, -40%, -400px)"></x-model>
 				<div class="timeline-blankSmall"> <!-- blank space inbetween the year --></div>
-
 
 				<div class="timeline-item">
 					<div class="content">
@@ -245,6 +252,9 @@
 					</div>
 				</div>
 
+				<!-- EPOXI 3d model -->
+				<x-model class="model model--medium model--abs" src="models/EPOXI.glb" style="transform: rotateX(-15deg) rotateY(25deg) translate3d(-35%, 20%, -400px) scale3d(0.4, 0.4, 0.4)"></x-model>
+
 				<div class="timeline-item">
 					<div class="content">
 						<figure><div class="circle"></div>
@@ -259,6 +269,7 @@
 								<p><a href="https://science.sciencemag.org/content/326/5952/562.full" target="_blank" class="timeline-link">Clark (2009)</a> recalibrated low spatial resolution data by the <a href="https://solarsystem.nasa.gov/missions/cassini/mission/spacecraft/cassini-orbiter/visible-and-infrared-mapping-spectrometer/" target="_blank" class="timeline-link">Visual and Infrared Mapping Spectrometer (VIMS)</a> on Cassini during its flyby of the Moon in 1999. This new analysis revealed broad absorptions at 3 and 2.8 micrometers, attributed to water and hydroxyl on the sunlit surface on the Moon. The amounts of water indicated in the spectra could be 10 to 1000 parts per million and locally higher. Trace amounts of hydroxyl were observed in the anorthositic highlands at lower latitudes.</p>
 								<br />
 								<br />
+								
 								<b><center>EPOXI Mission Corroborates M<sup>3</sup> Findings, and Observes Possible Migration of H<sub>2</sub>O/OH On The Moon </b></center>
 								<div class="tImage">
 									<center><a href="http://epoxi.astro.umd.edu/3gallery/LH_figs.shtml" target="_blank"><img src="images/timeline/timeImages/8Img.jpg"></a>
@@ -268,7 +279,7 @@
 								<br />
 								<center><b>M<sup>3</sup> Discovers H<sub>2</sub>O/OH Across the Sunlit Moon</b></center>
 								<div class="tImage">
-									<center><img src="images/exploreIcon.gif" style="height: auto;">
+									<center><img src="images/timeline/timeImages/exploreIcon.gif" style="height: auto;">
 								<p class="minicredit">Credit: ISRO/NASA/JPL-Caltech/Brown Univ./USGS</p></div></center>
 								<p><a href="https://www.jpl.nasa.gov/missions/moon-mineralogy-mapper-m3/" target="_blank" class="timeline-link">M<sup>3</sup> (Moon Mineral Mapper)</a> on <a href="https://www.isro.gov.in/Spacecraft/chandrayaan-1" target="_blank" class="timeline-link">Chandrayaan-1</a> detected absorption features near 2.8 to 3.0 micrometers on the surface of the Moon. The feature is seen as a widely distributed absorption that appears strongest at cooler high latitudes and at several fresh feldspathic craters. The general lack of correlation of this feature in sunlit M<sup>3</sup> data with neutron spectrometer hydrogen abundance data suggests that the formation and retention of hydroxyl and water are ongoing surficial processes. Hydroxyl/water production processes may feed polar cold traps and make the lunar regolith a candidate source of volatiles for human exploration (<a href="https://science.sciencemag.org/content/326/5952/568" target="_blank" class="timeline-link">Pieters et al., 2009</a>)</p>
 							</figcaption>
@@ -296,13 +307,13 @@
 			</div>
 			
 			<div title="2010" class="timeline-body">
-												  
 				<div class="timeline-item">
 				<p class="year">2010</p><div class="bigCircle" style="background-color: #3399aa;"></div>
 				</div>
-
+				<!-- LRO 3d model -->
+				<section title="Lunar Reconnaissance Orbitor"><x-model class="model model--medium model--abs" src="models/LRO.glb" style="transform: rotateX(15deg) translate3d(-115%, -65%, -400px) scale3d(0.8, 0.8,0.8)" alt="LRO" title="LRx-modelO"></></section>  
+				
 				<div class="timeline-blankSmall"> <!-- blank space inbetween the year --></div>
-
 
 				<div class="timeline-item">
 					<div class="content">
@@ -329,7 +340,7 @@
 							<h4 tabindex="0" class="title">Radar Measurements of the Lunar Poles are Ambiguous</h4>
 							<p>2010</p>
 							<figcaption>
-								<!--Add image with <img src="imagePath.jpg" style="height:100px;"> -->
+								<!--Add image with <img src="imagePath.jpg" style="width:300px;" target="_blank"> -->
 								<p><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2009GL042259" target="_blank" class="timeline-link">Spudis et al. (2010)</a> discuss <a href="https://www.isro.gov.in/Spacecraft/chandrayaan-1" target="_blank" class="timeline-link">Chandrayaan-1</a> lunar radar measurements of the poles (generally similar to those for Mercury), but do not detct comparably thick ice deposits.</p>
 							</figcaption>
 						</figure>
@@ -342,14 +353,12 @@
 							<h4 tabindex="0" class="title">Lunar Water Proposed to Have Been Delivered by Comets</h4>
 							<p>2011</p>
 							<figcaption>
-								<!--No Image: Add image with <img src="imagePath.jpg" style="height:100px;"> -->
+								<!--No Image: Add image with <img src="imagePath.jpg" style="width:300px;" target="_blank"> -->
 								<p><a href="https://www.nature.com/articles/ngeo1050" target="_blank" class="timeline-link">Greenwood et al. (2011)</a> use hydrogen isotopic evidence in <a href="https://www.youtube.com/watch?v=yvhLBzsDwSQ" target="_blank" class="timeline-link">Apollo rocks</a> (specifically apatites) to support idea that much of the lunar water came from comets shortly after the Moon-forming impact.</p>
 							</figcaption>
 						</figure>
 					</div>
 				</div>
-
-
 
 				<div class="timeline-item">
 					<div class="content">
@@ -382,10 +391,7 @@
 					</div>
 				</div>
 
-
 				<div class="timeline-blankSmall"> <!-- blank space inbetween the year --></div>
-
-
 				<div class="timeline-item">
 				<p class="year">2020</p><div class="bigCircle" style="background-color: #33aadd;"></div>
 				</div>
@@ -408,7 +414,6 @@
 				</div>
 
 
-
 				<div class="timeline-blankSmall"> <!-- blank space inbetween the year --></div>
 
 
@@ -424,21 +429,19 @@
 			</div>
 			
 		</section>
-		<br><br><br><br>
+		<br><br><br><br><br>
 		<section title="Moon">
 			<div class="bottomMoon" style><br>
-				<div class="credit"><p>Image Credit: NASA/LRL/LOLA</p></div>
+				<div class="credit"><p>3D Image Credit: NASA/LRO/LOLA/JPL-Caltech</p></div>
+				<!-- Moon 3d image-->
 				<div class="test test--5">
 					<div class="test__output">
-						<x-model class="model model--medium model--abs" src="moon.glb" style="transform: scale3d(2,2,2);"></x-model>
+						<x-model class="model model--medium model--abs" src="models/moon.glb" style="transform: rotateY(-20deg) rotateX(0deg) rotateZ(0deg) scale3d(2.3,2.3,2.3);"></x-model>
 					</div>
 				</div>
-				<!-- <img src="images/timeline/moon_bg_small.png" alt="Image from Galileo Orbiter using Solid-State Imaging Instrument"></a> -->
+				<!-- None 3D Moon Image <img src="images/timeline/moon_bg_small.png" alt="Image from Galileo Orbiter using Solid-State Imaging Instrument"></a> -->
 			</div>
-
 		</section>
-		
-
 	</div><!-- End: Pagebody Class -->
 
 		<footer>
@@ -467,7 +470,8 @@
   <script src="js/custom-element-polyfill.min.js"></script>
   <script src="js/three.min.js"></script>
   <script src="js/three-gltf-loader.min.js"></script>
-  <script src="js/model-element.min.js"></script>
+	<script src="js/model-element.min.js"></script>
+	<script src="js/canvas.js"></script>
 
 </body>
 </html>
