@@ -196,7 +196,6 @@ figcaption {
   animation-duration: 0.8s;
   animation-name: timeAnimation;
   z-index: 1000;
-  transform: translateZ(29000px);
 }
 
 figure:hover figcaption {
