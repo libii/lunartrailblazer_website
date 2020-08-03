@@ -1,0 +1,113 @@
+* {
+  /* transform-style: preserve-3d; */
+}
+html, body {
+  height: 100vh;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  background-color: black;
+  perspective: 700px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.model {
+  pointer-events: none;
+  display: block;
+  width: 50vmin;
+  height: 50vmin;
+}
+.model--medium {
+  width: 37.5vmin;
+  height: 37.5vmin;
+}
+.model--small {
+  width: 25vmin;
+  height: 25vmin;
+}
+.model--tiny {
+  width: 15vmin;
+  height: 15vmin;
+}
+.model--abs {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -25vmin;
+}
+.model--abs.model--medium {
+  margin: -18.75vmin;
+}
+.model--abs.model--small {
+  margin: -12.5vmin;
+}
+.model--abs.model--tiny {
+  margin: -7.5vmin;
+}
+.model--spaced {
+  margin: 1.5rem;
+}
+
+/* .model-wrap {
+  margin: auto;
+  position: relative;
+} */
+
+.test {
+  margin-bottom: 20em;
+}
+.test__output {
+  font-size: 0;
+  text-align: center;
+  /* border:1px solid blue; */
+  padding:2rem;
+  width: 1000px;
+}
+.test .model {
+  display: inline-block;
+}
+
+.test--5 .test__output {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vmin;
+  width: 100vmin;
+}
+
+x-model {
+  z-index: -100;
+}
+
+@keyframes spin-xyz {
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+@keyframes spin-x {
+  to {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes spin-y {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes spin-z {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes swing-x {
+  from {
+    transform: translateX(-25vw);
+  }
+  to {
+    transform: translateX(25vw);
+  }
+}

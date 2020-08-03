@@ -28,7 +28,6 @@ html,body {
 	z-index: 0;
 }
 
-
 /* HEADER */
 header {
 	width: 100%;
@@ -36,7 +35,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 5px;
-	position: relative;
 }
 /* HEADER BRAND */
 .headerBrand {

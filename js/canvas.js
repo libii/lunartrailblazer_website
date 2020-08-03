@@ -13,7 +13,7 @@ function makeStarsCanvas(starSize = 0) {
   const stars = [];
 
   // If you want the density to be consistent, consider changing
-  //  the number of stars based on the area of the canvas as well
+  // the number of stars based on the area of the canvas as well
   for (var i = 0; i < 200 * (Math.max(1, 3 - starSize)); i++) {
     stars.push({
       //Math Equation with a seed
